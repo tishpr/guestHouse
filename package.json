@@ -1,5 +1,5 @@
 {
-  "name": "guestHouse",
+  "name": "guesthouse",
   "version": "1.0.0",
   "description": "landing page for GuestHouse",
   "main": "index.js",
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/tishpr/guestHouse#readme",
   "devDependencies": {
     "node-sass": "^7.0.1"
-  }
+  },
+  "dependencies": {}
 }
