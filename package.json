@@ -1,10 +1,10 @@
 {
-  "name": "name",
+  "name": "guestHouse",
   "version": "1.0.0",
   "description": "landing page for GuestHouse",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
