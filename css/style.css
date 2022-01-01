@@ -1,0 +1,17 @@
+/* colors: 
+lt green: #7ed56f
+med green #55c75a
+dk green #28b485 
+
+*/
+/* reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato' sans-serif;
+  font-weight: 400;
+}
