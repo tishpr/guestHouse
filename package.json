@@ -1,0 +1,22 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "landing page for GuestHouse",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tishpr/guestHouse.git"
+  },
+  "author": "Tish Snyder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tishpr/guestHouse/issues"
+  },
+  "homepage": "https://github.com/tishpr/guestHouse#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
