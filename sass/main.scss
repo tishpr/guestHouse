@@ -4,8 +4,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 } 
 .heading-primary {
+  text-align: center;
   color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
@@ -15,59 +17,20 @@
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 2.5rem;   
-    animation-name: moveInLeft 2s ease-out;
+    letter-spacing: 2rem;
+    animation-delay: 2s;   
+    animation: moveInLeft 2.5s ease-out;
     
 }
     &--sub {
       display: block;
       font-size: 2.3rem;
       font-weight: 400;
-      letter-spacing: 1.75rem;
-      animation-delay: .5s;
-      animation: moveInRight 2s ease-out;
-      
-
-      
-      
-    // animation-duration: 3s;
+      letter-spacing: 1.7rem;
+      animation-delay: 1.5s;
+      animation-play-state: moveInRight 2.2s ease-out;    
        }
     }
-
- @keyframes moveInLeft {
-  0%{
-    opacity: 0;
-    transform: translateX(-10rem);
-  } 
- 80% {
-  transform: translateX(1rem);
- }
-   100% {
-  opacity: 1;
-  transform: translate(0);
-    }
-  }
-  @keyframes moveInRight {
-    0%{
-      opacity: 0;
-      transform: translateX(30rem);
-    } 
-   80% {
-     transform: translateX(-1rem);
-   } 
-     100% {
-      opacity: 1;
-      transform: translate(0);
-     }
-    }
-
-  .paragraph {
-    font-size: 1.6rem; }
-    .paragraph:not(:last-child) {
-      margin-bottom: 3rem; }
-
-
-
 .bg-video {
   position: absolute;
   top: 0;
@@ -78,10 +41,6 @@
   opacity: .5;
   overflow: hidden; 
 }
-
-
-
-
 
 .bg-video--content {
   height: 100%;
