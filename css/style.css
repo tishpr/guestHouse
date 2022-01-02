@@ -1,37 +1,7 @@
-/* reset */
-.text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 2.5rem;
-    animation-name: moveInLeft;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-timing-function: ease-out; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2.3rem;
-    font-weight: 400;
-    letter-spacing: 1.75rem;
-    animation-delay: 1s;
-    animation-duration: 3s;
-    animation-name: moveInRight; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-15rem); }
   80% {
     transform: translateX(2rem); }
   100% {
@@ -41,18 +11,56 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(30rem); }
-  80% {
-    transform: translateX(-2rem); }
+    transform: translateX(20rem); }
+  80% { }
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
 
 .paragraph {
   font-size: 1.6rem; }
 
 .paragraph:not(:last-child) {
   margin-bottom: 3rem; }
+
+body {
+  font-family: 'Lato' sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
 
 .bg-video {
   position: absolute;
@@ -68,3 +76,30 @@
   height: 100%;
   width: 100%;
   object-fit: scale-down; }
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.heading-primary {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    animation-delay: 2s;
+    animation: moveInLeft 2.5s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.3rem;
+    font-weight: 400;
+    letter-spacing: 1.7rem;
+    animation-delay: 1.5s;
+    animation-play-state: moveInRight 2.2s ease-out; }

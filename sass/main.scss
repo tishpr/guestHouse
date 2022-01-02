@@ -1,49 +1,10 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-.text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-} 
-.heading-primary {
-  text-align: center;
-  color: $color-white;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-    &--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 2rem;
-    animation-delay: 2s;   
-    animation: moveInLeft 2.5s ease-out;
-    
-}
-    &--sub {
-      display: block;
-      font-size: 2.3rem;
-      font-weight: 400;
-      letter-spacing: 1.7rem;
-      animation-delay: 1.5s;
-      animation-play-state: moveInRight 2.2s ease-out;    
-       }
-    }
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .5;
-  overflow: hidden; 
-}
-
-.bg-video--content {
-  height: 100%;
-    width: 100%;
-    object-fit: scale-down; 
-}
+@import "components/bg-video";
