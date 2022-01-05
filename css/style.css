@@ -102,4 +102,4 @@ body {
     font-weight: 400;
     letter-spacing: 1.7rem;
     animation-delay: 1.5s;
-    animation-play-state: moveInRight 2.2s ease-out; }
+    animation: moveInRight 2.2s ease-out; }
