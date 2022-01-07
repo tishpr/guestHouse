@@ -146,3 +146,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+
+.row {
+  max-width: 114rem;
+  background-color: #55c57a;
+  margin: 0 auto;
+  margin-bottom: 8rem; }
