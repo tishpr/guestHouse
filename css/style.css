@@ -136,7 +136,7 @@ body {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom .6s ease-out .75s;
   animation-fill-mode: backwards; }
 

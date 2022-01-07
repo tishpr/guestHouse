@@ -17,11 +17,11 @@
   }
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
   }
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 .5rem .8rem rgba(0,0,0,.2);
+    box-shadow: 0 .5rem .8rem rgba($color-black,.2);
   }
   &::after {
     content: "";
@@ -42,7 +42,7 @@ background-color: $color-white;
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
   }
-  &-animated {
+  &--animated {
     animation: moveInBottom .6s ease-out .75s;
     animation-fill-mode: backwards;
   }
