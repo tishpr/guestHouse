@@ -33,6 +33,10 @@ body {
       animation-duration: 2s;
       animation-timing-function: ease-out;
   }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
 }
   .paragraph {
     font-size: $default-font-size;
