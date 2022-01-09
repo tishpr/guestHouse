@@ -1,7 +1,6 @@
 body {
-  font-family: 'Lato' sans-serif;
+  font-family: 'Bitter', serif;
   font-weight: 400;
-  
   line-height: 1.7;
   color: $color-grey-dark;
   padding: 3rem;
@@ -15,9 +14,9 @@ body {
 
   &--main {
       display: block;
-      font-size: 6rem;
+      font-size: 4rem;
       font-weight: 400;
-      letter-spacing: 3.5rem;
+      letter-spacing: 2.7rem;
   
       animation-name: moveInLeft;
       animation-duration: 1s;
@@ -35,7 +34,13 @@ body {
   }
 
   .heading-secondary {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  
   }
 }
   .paragraph {
