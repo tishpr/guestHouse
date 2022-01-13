@@ -49,8 +49,7 @@ body {
   font-family: 'Bitter', serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -149,14 +148,12 @@ body {
   animation: moveInBottom .6s ease-out .75s;
   animation-fill-mode: backwards; }
 
-.header {
-  padding: 3rem; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
 
 .row {
   max-width: 114rem;
@@ -185,3 +182,9 @@ body {
     width: calc(2 * ((100% - 3 * 5rem) / 4) + 5rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 5rem) / 4) + 2 * 5rem); }
+
+.section-about {
+  position: relative;
+  background-color: #f7f7f7;
+  margin-top: -10vh;
+  padding: 25rem 0; }
