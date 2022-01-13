@@ -33,16 +33,30 @@ body {
       animation-timing-function: ease-out;
   }
 
-  .heading-secondary {
-    font-size: 3.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-  
-  }
 }
+
+.heading-secondary {
+  font-size: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block; // gradient only covers the text
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+
+
+    &:hover{
+      transform: skewX(10deg) skewY(5deg) scale(1.1);
+      text-shadow: .5rem 1rem 2rem RGBA($color-black, .5);
+      //had to use caps on rgba to get it to apply.. seems to be a sass issue
+    }
+} // text shadow not showing 
+
+
   .paragraph {
     font-size: $default-font-size;
 
