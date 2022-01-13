@@ -32,7 +32,6 @@ body {
       animation-duration: 2s;
       animation-timing-function: ease-out;
   }
-
 }
 
 .heading-secondary {
@@ -51,11 +50,16 @@ body {
 
     &:hover{
       transform: skewX(10deg) skewY(5deg) scale(1.1);
-      text-shadow: .5rem 1rem 2rem RGBA($color-black, .5);
+      text-shadow: .5rem 1rem 2rem RGBA($color-black, .5);// text shadow not showing 
       //had to use caps on rgba to get it to apply.. seems to be a sass issue
     }
-} // text shadow not showing 
+} 
 
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
   .paragraph {
     font-size: $default-font-size;
